@@ -63,7 +63,10 @@ public class ConsolaOlimpicos
 				else if (opcion_seleccionada == 12 && calculadora != null)
 					ejecutarPorcentajeMedallistas();
 				else if (opcion_seleccionada == 13 && calculadora != null)
-					ejecutarPorcentajeMedallistas();
+				{
+					String atleta = input("Por favor digite el nombre del atleta a buscar: ");
+					//ejecutarPorcentajeMedallistas();
+				}
 				else if (opcion_seleccionada == 14)
 				{
 					System.out.println("Saliendo de la aplicación ...");
