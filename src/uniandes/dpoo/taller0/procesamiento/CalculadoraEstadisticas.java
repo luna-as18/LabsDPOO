@@ -42,6 +42,7 @@ public class CalculadoraEstadisticas
 	 */
 	private List<Evento> eventos;
 
+	
 	// ************************************************************************
 	// Constructores
 	// ************************************************************************
@@ -90,6 +91,10 @@ public class CalculadoraEstadisticas
 
 		return resultado;
 	}
+	
+	
+		
+	
 
 	/**
 	 * Calcula cuáles fueron las medallas que ganó un atleta en un rango de años
@@ -349,6 +354,19 @@ public class CalculadoraEstadisticas
 
 		return todoterreno;
 	}
+	public Pais paisAtleta(String nombreAtleta)
+	{
+		Pais resultado= null;
+			for (int i = 0; i < atletas.size() && resultado == null; i++)
+			{
+				if (atletas.get(i).darNombre().equals(nombreAtleta))
+					
+					resultado = atletas.get(i).darPais();
+			}
+					
+	return resultado;
+		
+	}
 
 	/**
 	 * Consulta cuáles han sido los medallistas de un determinado país y de un
@@ -423,6 +441,7 @@ public class CalculadoraEstadisticas
 		for (int i = 0; i < atletas.size() && elAtleta == null; i++)
 		{
 			if (atletas.get(i).darNombre().equals(nombreAtleta))
+				
 				elAtleta = atletas.get(i);
 		}
 		return elAtleta;
