@@ -116,7 +116,7 @@ public class ConsolaOlimpicos
 	private void ejecutarPaisAtleta()
 	{
 		String atleta = input("Por favor ingrese el nombre de un atleta");
-		Pais pais = calculadora.paisAtleta(atleta);
+		String pais = calculadora.paisAtleta(atleta);
 			if (pais != null)
 				{
 				System.out.println("El atleta ingresado es del país" + "\n"+ pais);
@@ -127,7 +127,6 @@ public class ConsolaOlimpicos
 				}
 	
 	}
-
 	/**
 	 * Le muestra el usuario el porcentaje de atletas que son medallistas
 	 */

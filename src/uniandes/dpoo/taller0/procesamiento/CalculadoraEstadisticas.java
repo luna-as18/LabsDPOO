@@ -354,14 +354,14 @@ public class CalculadoraEstadisticas
 
 		return todoterreno;
 	}
-	public Pais paisAtleta(String nombreAtleta)
+	public String paisAtleta(String nombreAtleta)
 	{
-		Pais resultado= null;
+		String resultado= null;
 			for (int i = 0; i < atletas.size() && resultado == null; i++)
 			{
 				if (atletas.get(i).darNombre().equals(nombreAtleta))
 					
-					resultado = atletas.get(i).darPais();
+					resultado = atletas.get(i).darPais().darNombre();
 			}
 					
 	return resultado;
